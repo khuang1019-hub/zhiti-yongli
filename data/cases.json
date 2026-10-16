@@ -1,0 +1,393 @@
+[
+  {
+    "id": "zhaogang-tencent-adp",
+    "title": "找钢网：企微入口数字员工做询价报价与比价",
+    "industry": "钢铁贸易 / B2B",
+    "role": "销售、采购、内勤",
+    "stack": "腾讯云 ADP / Claw、企业微信、交易/ERP/TMS/财务 Workflow",
+    "summary": "在企业微信统一入口接入「数字员工」：Agent 理解口语化询价与多意图提问，Workflow 严格调用业务系统完成查货配单、报价生成与采购比价。公开报道称售前找货报价人效提升约 10–20 倍；比价从近 1 小时缩短到几分钟。",
+    "steps": [
+      "员工在企微提问或客户群出现询价消息",
+      "Agent 识别意图，抽取品名/规格/材质/数量/到货地",
+      "开放意图走 Agent，严谨步骤走 Workflow 调交易/ERP 等系统",
+      "生成报价单或比价表，销售/采购确认后发送",
+      "商机状态提醒与询价转化复盘"
+    ],
+    "risks": "行业黑话与非标规格解析误差；报价需人工确认防错报；系统权限与审计需可追踪。",
+    "featured": true,
+    "source_name": "腾讯云开发者社区 / IDC 案例观察 / 腾讯云 ADP 方案页",
+    "source_url": "https://developer.cloud.tencent.com/article/2715405",
+    "source_urls": [
+      "https://developer.cloud.tencent.com/article/2715405",
+      "https://adp.tencent.com/solutions/trading",
+      "https://www.idc.com/resource-center/blog/%E4%BC%81%E4%B8%9A-agent-%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E8%A7%82%E5%AF%9F%EF%BC%9A%E7%AE%97%E5%A5%BD%E5%BD%93%E4%B8%8Broi%EF%BC%8C%E5%B8%83%E5%B1%80%E7%BB%84%E7%BB%87%E9%95%BF%E6%9C%9F%E8%BD%AC/"
+    ]
+  },
+  {
+    "id": "laiyiifen-volcengine",
+    "title": "来伊份×火山引擎：200+智能体进门店巡检与补货",
+    "industry": "零售连锁",
+    "role": "门店运营、督导、供应链、审批流负责人",
+    "stack": "火山引擎 HiAgent、豆包大模型、现有数字化中台",
+    "summary": "创建 500+ 智能体，其中 200+ 落地：AI 巡检覆盖近 3000 家门店，AI 补货覆盖 1500+ 门店；智能审批耗时降低约 70%；飞单识别准确率公开披露约 95%。采用「1+N+X」矩阵与数据/能力分级治理。",
+    "steps": [
+      "核心系统上云并部署统一 AI 中台（HiAgent）",
+      "业务侧成立智能提升组，按开店/运店/商品等域建 Agent",
+      "巡检 Agent 多模态识别陈列/物料/空置与异常交易",
+      "补货 Agent 按门店特征生成差异化补货清单",
+      "审批 Agent 智能提醒与自动审批，关键节点保留人工"
+    ],
+    "risks": "加盟门店执行一致性；误报飞单影响一线信任；敏感数据五级分级与 Agent 五级能力边界需持续治理。",
+    "featured": true,
+    "source_name": "中国日报网（鲁网转载）",
+    "source_url": "https://cn.chinadaily.com.cn/a/202608/21/WS6a880312a3105d3d7a27c416.html",
+    "source_urls": [
+      "https://cn.chinadaily.com.cn/a/202608/21/WS6a880312a3105d3d7a27c416.html"
+    ]
+  },
+  {
+    "id": "laiyiifen-ai-cs",
+    "title": "来伊份：在线客服 AI 助手独立处理约七成咨询",
+    "industry": "零售 / 消费者服务",
+    "role": "客服、会员运营",
+    "stack": "在线客服 AI 助手（公司投资者关系披露）",
+    "summary": "上市公司投资者关系活动披露：在线客服 AI 助手可独立处理约 73.95% 咨询量，问题解决时效较 2024 年提升至披露口径下的显著改善（材料中并提 92.7% 相关时效表述）。与门店/供应链 Agent 体系并行。",
+    "steps": [
+      "全渠道接入在线咨询",
+      "AI 助手优先应答标准问题",
+      "复杂/投诉类转人工",
+      "知识沉淀与问题解决时效追踪"
+    ],
+    "risks": "公开披露为投资者沟通口径，需与内部运营报表交叉验证；客服体验与「人可随时介入」边界需明确（参考行业 Klarna 教训）。",
+    "featured": false,
+    "source_name": "上海来伊份投资者关系活动记录表（东财 PDF）",
+    "source_url": "https://pdf.dfcfw.com/pdf/H22_AN202606121823509283_1.pdf",
+    "source_urls": [
+      "https://pdf.dfcfw.com/pdf/H22_AN202606121823509283_1.pdf",
+      "https://www.gelonghui.com/news/5019529"
+    ]
+  },
+  {
+    "id": "klarna-openai-cs",
+    "title": "Klarna：AI 客服助理承接约三分之二会话",
+    "industry": "金融科技 / 消费信贷",
+    "role": "客户服务",
+    "stack": "OpenAI 驱动的 AI assistant（公司新闻稿）",
+    "summary": "上线首月约 230 万次会话、承接约 2/3 客服聊天；解决时间从约 11 分钟降至不足 2 分钟；重复问询下降约 25%。后续公开报道显示公司强调保留真人通道并调整「过度 AI 化」策略——是「可量化成效 + 人工兜底」双重教材。",
+    "steps": [
+      "全球多市场接入 AI 助理（多语言）",
+      "处理退款/退货/支付/争议等高频工单",
+      "满意度与一次解决率对标人工",
+      "保留转人工选项，并按业务反馈调整人机配比"
+    ],
+    "risks": "体验与品牌口碑风险；过度裁员后回潮用人；成本节省与客服总成本需分项看，避免只报分子。",
+    "featured": true,
+    "source_name": "Klarna 官方新闻稿",
+    "source_url": "https://www.klarna.com/international/press/klarna-ai-assistant-handles-two-thirds-of-customer-service-chats-in-its-first-month/",
+    "source_urls": [
+      "https://www.klarna.com/international/press/klarna-ai-assistant-handles-two-thirds-of-customer-service-chats-in-its-first-month/",
+      "https://www.customerexperiencedive.com/news/klarna-says-ai-agent-work-853-employees/805987/"
+    ]
+  },
+  {
+    "id": "statefarm-copilot-studio",
+    "title": "State Farm：受治理的 Copilot Studio Agent 规模化",
+    "industry": "保险",
+    "role": "HR、核保、内容与翻译、IT 平台团队",
+    "stack": "Microsoft Copilot Studio、Power Platform、SharePoint、Entra ID",
+    "summary": "41 个通过风险评估的生产构建；Power Platform 内 3000+ Agent 身份。Ask HR 政策 Agent 减轻人工答疑；核保准则检索 Agent 上线 30 天内成为第二常用；营销翻译周转从约 12 个月压到约 24 小时。强调治理与人工问责先行。",
+    "steps": [
+      "负责任 AI 工坊 + 阶梯式建设（个人→团队→部门→企业）",
+      "风险与合规审批路径清晰后再进生产",
+      "知识类 Agent（HR/核保手册）优先",
+      "目录化复用连接器与入职/离职方案",
+      "规划向跨系统编排与行动型 Agent 演进"
+    ],
+    "risks": "知识库过时导致误导；核保等关键决策必须人责；规模化后 Agent 身份与权限治理成本上升。",
+    "featured": true,
+    "source_name": "Microsoft Customer Stories",
+    "source_url": "https://www.microsoft.com/en/customers/story/26947-state-farm-microsoft-power-platform",
+    "source_urls": [
+      "https://www.microsoft.com/en/customers/story/26947-state-farm-microsoft-power-platform",
+      "https://adoption.microsoft.com/zh-cn/agent-transformation-stories/"
+    ]
+  },
+  {
+    "id": "fujitsu-m365-copilot",
+    "title": "富士通：约 10 万席 Copilot，服务台初响自动化约 75%",
+    "industry": "IT 服务 / 综合科技",
+    "role": "服务台、全体知识工作者",
+    "stack": "Microsoft 365 Copilot、企业内部 Fujitra 转型网络",
+    "summary": "从 7500 席试点扩至约 10 万席；有权限员工中使用率曾报超 90%。服务台年询约 30 万，AI Agent 承接约 75% 的初响与分诊，员工更多投入知识质量与准确率改进。",
+    "steps": [
+      "小规模跨部门试点验证价值",
+      "分阶段扩容席位与接入系统",
+      "服务台初响/分诊 Agent 上线",
+      "以 Copilot 为入口连接专业 Agent 与业务系统"
+    ],
+    "risks": "客户现场/高安全环境无法覆盖；依赖知识内容质量；自动化分诊错误会放大工单路由成本。",
+    "featured": false,
+    "source_name": "Microsoft Customer Stories",
+    "source_url": "https://www.microsoft.com/en/customers/story/27449-fujitsu-limited-microsoft-365-copilot",
+    "source_urls": [
+      "https://www.microsoft.com/en/customers/story/27449-fujitsu-limited-microsoft-365-copilot"
+    ]
+  },
+  {
+    "id": "sanofi-bedrock-concierge",
+    "title": "赛诺菲 Concierge：全球员工 Agent 入口（AWS Bedrock）",
+    "industry": "医药 / 生物制药",
+    "role": "研发、制造供应、职能横向团队",
+    "stack": "Amazon Bedrock、自建 Concierge、Agent Hub 编排层",
+    "summary": "2026Q1：周活约 5 万、月活约 7.2 万、累计约 1100 万次对话、正面反馈约 90%；调查称约 90.5% 员工节省常规任务时间。Concierge 作为发现与编排入口，连接检索、回写与流程自动化专业 Agent。",
+    "steps": [
+      "自建、可换模型、多区域部署降延迟",
+      "从生产力助手升级为数字网关",
+      "建设 Agent Hub 连接专业 Agent",
+      "社区超级用户分享工作流，持续扩能力（含 AgentCore）"
+    ],
+    "risks": "制药数据敏感与合规；幻觉导致错误决策；遗留应用千万级导航替代需权限与审计严密。",
+    "featured": false,
+    "source_name": "AWS Case Study",
+    "source_url": "https://aws.amazon.com/solutions/case-studies/sanofi-bedrock-case-study/",
+    "source_urls": [
+      "https://aws.amazon.com/solutions/case-studies/sanofi-bedrock-case-study/"
+    ]
+  },
+  {
+    "id": "pwc-google-agents",
+    "title": "PwC×Google Cloud：全球 250+ 企业级 Agent 组合",
+    "industry": "专业服务（多行业模板）",
+    "role": "咨询交付、客户行业运营团队",
+    "stack": "Google Cloud、PwC agent ecosystem",
+    "summary": "2025-10 宣布 EMEA 新增 100+ 企业就绪 Agent，全球组合超 250。覆盖金融合规/AML、制造质检与供应链例外、能源运维、公共服务分诊、零售需求与退货异常等。欧洲医疗网络 Limbach 在 34 个站点推进行政与科研侧 Agent，并强调 EU AI Act 对齐培训。",
+    "steps": [
+      "按行业打包可复用 Agent 能力",
+      "与客户共创用例并治理先行",
+      "站点级推广（采购、市场等跨站点 Agent）",
+      "培训三件套：基础、现场、专家论坛"
+    ],
+    "risks": "模板与客户流程落差；跨境数据与 AI Act 合规；「企业就绪」需客户侧数据与权限配套。",
+    "featured": false,
+    "source_name": "PwC 新闻稿",
+    "source_url": "https://www.pwc.com/gx/en/news-room/press-releases/2025/scales-global-ai-agent-ecosystem.html",
+    "source_urls": [
+      "https://www.pwc.com/gx/en/news-room/press-releases/2025/scales-global-ai-agent-ecosystem.html"
+    ]
+  },
+  {
+    "id": "bank-360-cs-credit",
+    "title": "某银行×360：客服与信贷初审智能体（信通院报告收录）",
+    "industry": "银行",
+    "role": "客服、信贷审批",
+    "stack": "360 企业级智能体方案（报告案例，客户名公开材料未全称）",
+    "summary": "中国信通院联合 360 等发布的企业级智能体研究报告（2026）收录案例：客服智能体上线后人工客服投入降约 15%、满意度升约 20%；信贷审批辅助结合材料、内部政策与评级模型做智能初审，周期由约 7 天缩至约 3 天。",
+    "steps": [
+      "客服场景承接高频标准问询",
+      "信贷材料与政策/评级模型辅助初审",
+      "人工复核终审与责任边界",
+      "以人效与周期等 KPI 验收"
+    ],
+    "risks": "公开报道为二手转述，银行全称与审计口径需再核原报告；信贷决策合规与可解释性要求高。",
+    "featured": false,
+    "source_name": "信息主管网（转述信通院×360 报告）",
+    "source_url": "https://www.cio360.net/show-616-104901-1.html",
+    "source_urls": [
+      "https://www.cio360.net/show-616-104901-1.html"
+    ]
+  },
+  {
+    "id": "qingdao-port-baidu",
+    "title": "青岛港×百度伐谋：配载算法迭代 Agent",
+    "industry": "港口物流",
+    "role": "算法/运营优化团队",
+    "stack": "百度伐谋 Agent（IDC 案例精选披露）",
+    "summary": "IDC「中国企业级 Agent 最佳实践与案例精选」观察：用 Agent 持续优化青岛港配载算法，算法迭代周期缩短 50% 以上，从数周压到小时级。",
+    "steps": [
+      "将配载优化目标与约束结构化",
+      "Agent 辅助实验/迭代算法方案",
+      "用生产指标验证效果",
+      "缩短迭代闭环"
+    ],
+    "risks": "港口安全与调度强约束；效果依赖数据质量；公开材料为 IDC 摘要，细节需企业侧确认。",
+    "featured": false,
+    "source_name": "IDC 企业 Agent 最佳实践观察",
+    "source_url": "https://www.idc.com/resource-center/blog/%E4%BC%81%E4%B8%9A-agent-%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E8%A7%82%E5%AF%9F%EF%BC%9A%E7%AE%97%E5%A5%BD%E5%BD%93%E4%B8%8Broi%EF%BC%8C%E5%B8%83%E5%B1%80%E7%BB%84%E7%BB%87%E9%95%BF%E6%9C%9F%E8%BD%AC/",
+    "source_urls": [
+      "https://www.idc.com/resource-center/blog/%E4%BC%81%E4%B8%9A-agent-%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E8%A7%82%E5%AF%9F%EF%BC%9A%E7%AE%97%E5%A5%BD%E5%BD%93%E4%B8%8Broi%EF%BC%8C%E5%B8%83%E5%B1%80%E7%BB%84%E7%BB%87%E9%95%BF%E6%9C%9F%E8%BD%AC/"
+    ]
+  },
+  {
+    "id": "hangzhou-bank-ant",
+    "title": "杭州银行×蚂蚁数科：多 Agent 营销策略生成",
+    "industry": "银行零售/对公经营",
+    "role": "客户经营、产品与策略团队",
+    "stack": "蚂蚁数科多 Agent（客户洞察/产品分析/营销策略）",
+    "summary": "IDC 案例观察：基于多个 Agent 处理客户洞察、产品分析与营销策略，项目测算策略生成时间从天级缩短到分钟级。可与杭州银行公开的智能展业体系表述交叉阅读。",
+    "steps": [
+      "客户洞察 Agent 汇总画像与信号",
+      "产品分析 Agent 匹配可售产品",
+      "策略 Agent 生成营销方案",
+      "人工合规校验后触达与复盘"
+    ],
+    "risks": "金融营销合规与适当性；分钟级产出需质检；IDC 为摘要口径。",
+    "featured": false,
+    "source_name": "IDC 企业 Agent 最佳实践观察",
+    "source_url": "https://www.idc.com/resource-center/blog/%E4%BC%81%E4%B8%9A-agent-%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E8%A7%82%E5%AF%9F%EF%BC%9A%E7%AE%97%E5%A5%BD%E5%BD%93%E4%B8%8Broi%EF%BC%8C%E5%B8%83%E5%B1%80%E7%BB%84%E7%BB%87%E9%95%BF%E6%9C%9F%E8%BD%AC/",
+    "source_urls": [
+      "https://www.idc.com/resource-center/blog/%E4%BC%81%E4%B8%9A-agent-%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E8%A7%82%E5%AF%9F%EF%BC%9A%E7%AE%97%E5%A5%BD%E5%BD%93%E4%B8%8Broi%EF%BC%8C%E5%B8%83%E5%B1%80%E7%BB%84%E7%BB%87%E9%95%BF%E6%9C%9F%E8%BD%AC/",
+      "https://www.shobserver.com/sgh/detail?id=1749968"
+    ]
+  },
+  {
+    "id": "guosheng-jinzhiwei",
+    "title": "国盛证券×金智维：运维 CMDB 查询进工单秒级处置",
+    "industry": "证券 / IT 运维",
+    "role": "运维、值班工程师",
+    "stack": "金智维 RPA/Agent 与 CMDB、工单系统",
+    "summary": "IDC 案例：将证券运维中的 CMDB 查询接入工单与自动处置流程，查询时间从数天级缩短到秒级，减少人工翻查与等待。",
+    "steps": [
+      "工单触发或自然语言查询",
+      "连接 CMDB 检索配置与依赖",
+      "自动处置流程执行可脚本化步骤",
+      "异常升级人工"
+    ],
+    "risks": "自动变更的生产风险；权限与双人复核；公开材料为 IDC 摘要。",
+    "featured": false,
+    "source_name": "IDC 企业 Agent 最佳实践观察",
+    "source_url": "https://www.idc.com/resource-center/blog/%E4%BC%81%E4%B8%9A-agent-%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E8%A7%82%E5%AF%9F%EF%BC%9A%E7%AE%97%E5%A5%BD%E5%BD%93%E4%B8%8Broi%EF%BC%8C%E5%B8%83%E5%B1%80%E7%BB%84%E7%BB%87%E9%95%BF%E6%9C%9F%E8%BD%AC/",
+    "source_urls": [
+      "https://www.idc.com/resource-center/blog/%E4%BC%81%E4%B8%9A-agent-%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E8%A7%82%E5%AF%9F%EF%BC%9A%E7%AE%97%E5%A5%BD%E5%BD%93%E4%B8%8Broi%EF%BC%8C%E5%B8%83%E5%B1%80%E7%BB%84%E7%BB%87%E9%95%BF%E6%9C%9F%E8%BD%AC/"
+    ]
+  },
+  {
+    "id": "china-spring-defan",
+    "title": "中国弹簧×得帆：计划物流采购排产做成 Skills",
+    "industry": "制造",
+    "role": "计划、物流、采购、质量",
+    "stack": "得帆平台 Skills + 企业业务系统连接",
+    "summary": "IDC 案例：把计划物流、采购、排产和质量整改等流程整理为 Skills，连接业务系统协助员工处理任务，整体效率公开口径提升约 70%–80%。业务人员参与定义与验收。",
+    "steps": [
+      "梳理高频业务流程为 Skills",
+      "连接 ERP/MES 等系统",
+      "业务人员提供样例与验收标准",
+      "上线后按任务闭环迭代"
+    ],
+    "risks": "制造现场例外多；Skills 覆盖不足时体验差；效率百分比为案例口径，跨厂不可直接对比。",
+    "featured": false,
+    "source_name": "IDC 企业 Agent 最佳实践观察",
+    "source_url": "https://www.idc.com/resource-center/blog/%E4%BC%81%E4%B8%9A-agent-%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E8%A7%82%E5%AF%9F%EF%BC%9A%E7%AE%97%E5%A5%BD%E5%BD%93%E4%B8%8Broi%EF%BC%8C%E5%B8%83%E5%B1%80%E7%BB%84%E7%BB%87%E9%95%BF%E6%9C%9F%E8%BD%AC/",
+    "source_urls": [
+      "https://www.idc.com/resource-center/blog/%E4%BC%81%E4%B8%9A-agent-%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E8%A7%82%E5%AF%9F%EF%BC%9A%E7%AE%97%E5%A5%BD%E5%BD%93%E4%B8%8Broi%EF%BC%8C%E5%B8%83%E5%B1%80%E7%BB%84%E7%BB%87%E9%95%BF%E6%9C%9F%E8%BD%AC/"
+    ]
+  },
+  {
+    "id": "laiyi-tech-order",
+    "title": "来也科技：电子元器件分销商订单处理人效重构",
+    "industry": "电子元器件分销",
+    "role": "订单处理团队",
+    "stack": "来也科技自动化/Agent 方案（IDC 披露）",
+    "summary": "IDC 案例：帮助某电子元器件分销商处理订单，订单处理团队从约 20 人减至 1 人负责监管与异常复核，大量订单由自动化/Agent 完成。",
+    "steps": [
+      "标准化订单录入与校验规则",
+      "自动处理主流订单路径",
+      "异常单人工复核",
+      "持续沉淀例外规则"
+    ],
+    "risks": "客户名为「某」，公开可溯源到 IDC 摘要级别；人员编制变化需考虑业务波动与合规劳务安排。",
+    "featured": false,
+    "source_name": "IDC 企业 Agent 最佳实践观察",
+    "source_url": "https://www.idc.com/resource-center/blog/%E4%BC%81%E4%B8%9A-agent-%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E8%A7%82%E5%AF%9F%EF%BC%9A%E7%AE%97%E5%A5%BD%E5%BD%93%E4%B8%8Broi%EF%BC%8C%E5%B8%83%E5%B1%80%E7%BB%84%E7%BB%87%E9%95%BF%E6%9C%9F%E8%BD%AC/",
+    "source_urls": [
+      "https://www.idc.com/resource-center/blog/%E4%BC%81%E4%B8%9A-agent-%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E8%A7%82%E5%AF%9F%EF%BC%9A%E7%AE%97%E5%A5%BD%E5%BD%93%E4%B8%8Broi%EF%BC%8C%E5%B8%83%E5%B1%80%E7%BB%84%E7%BB%87%E9%95%BF%E6%9C%9F%E8%BD%AC/"
+    ]
+  },
+  {
+    "id": "jahwa-workbuddy-logistics",
+    "title": "上海家化×WorkBuddy：物流对账月度分析从 2 人天到 15 分钟",
+    "industry": "日化 / 消费品",
+    "role": "供应链运营、财务、品牌营销",
+    "stack": "腾讯 WorkBuddy 企业版、Skill 沉淀、Python 脚本、资料库",
+    "summary": "上海家化 2026 年 4 月联合腾讯智慧零售试点 WorkBuddy，报道称已覆盖九大部门、平均提效超 4.5 倍。供应链物流对账涉及天猫/京东/抖音等 7 类原始账单、18 个月约 6000 万行数据：运营经理把月度处理步骤拆解交给 WorkBuddy 生成 Python 脚本，用历史数据反复验证并把问题沉淀为 Skill，月度账单分析从 2 人天缩到 15 分钟，单项最高提效约 150 倍，整套月度工作压缩到 20 分钟内。",
+    "steps": [
+      "业务骨干把月度对账拆成可描述的处理步骤",
+      "WorkBuddy 按步骤生成 Python 处理脚本",
+      "用 18 个月历史账单持续验证结果",
+      "把发现的口径问题与例外沉淀为 Skill",
+      "其他部门复用 Skill，扩到看板、周报、调研分析"
+    ],
+    "risks": "指标为媒体报道转述企业方口径；脚本口径错误会批量放大，需保留历史回测与人工抽检；Skill 跨部门复用要管住数据权限。",
+    "featured": true,
+    "source_name": "扬子晚报扬眼（腾讯新闻转载），2026-08-27",
+    "source_url": "https://news.qq.com/rain/a/20260827A0991A00",
+    "source_urls": [
+      "https://news.qq.com/rain/a/20260827A0991A00"
+    ]
+  },
+  {
+    "id": "desay-sv-ai-indeed",
+    "title": "德赛西威×实在智能：218 条需求筛出 60+ 自动化场景，年省 4.3 万小时",
+    "industry": "汽车电子 / 制造",
+    "role": "财务、采购计划、跟单仓储、HR",
+    "stack": "实在智能数字员工（RPA+Agent）、OCR、合同智能审核、飞书/网银/财务系统",
+    "summary": "德赛西威数字化转型 CMO 在实在智能大会上分享：先梳理 218 条需求并分流，约七成（152 条）为自动化类；从研发生产、采购计划、跟单仓储、财务人事四类高频场景切入。批量开票人工 8 分钟、数字员工 30 秒。规模化后 60 余个场景自动化，年节省 4.3 万小时（目标 4.2 万），效率提升 396%，管理响应时间缩短 50%。",
+    "steps": [
+      "调研加工作坊梳理需求，分流为自动化、AI 叠加、回系统优化",
+      "按规则清晰、高频、跨系统优先挑场景",
+      "单场景（批量开票）先验证",
+      "数字员工上岗后按指标复盘",
+      "场景库沉淀后复制推广，配权限边界与操作日志审计"
+    ],
+    "risks": "来源为供应商官网发布的客户演讲整理，属厂商渠道；多数场景偏 RPA 式流程自动化，智能体成分需按场景甄别；指标为企业自报。",
+    "featured": false,
+    "source_name": "实在智能官网新闻（德赛西威 CMO 大会分享整理），2026-10-13",
+    "source_url": "https://www.ai-indeed.com/aboutNews/32499.html",
+    "source_urls": [
+      "https://www.ai-indeed.com/aboutNews/32499.html"
+    ]
+  },
+  {
+    "id": "asurion-copilot-invoice",
+    "title": "Asurion：发票异常处理 Agent，免人工处理率从不足 20% 升到 70%+",
+    "industry": "保险 / 设备保障服务",
+    "role": "财务应付（AP）",
+    "stack": "Microsoft Copilot Studio、Power Automate、Dynamics 365 Finance 发票采集",
+    "summary": "Asurion 每年约 3 万张直接采购订单发票、约九成带至少一个异常，免人工处理率一度跌破 20%。团队把 Copilot Studio Agent 嵌进 Power Automate 流程：发票进入错误状态时由 Agent 按既定规则修正料号、订单号等再回流入账。约一周做出验证，上线首周北美/南美供应商提升到 55% 以上，后续达到 70% 以上，目标 85%。",
+    "steps": [
+      "发票采集识别出错误状态的数据",
+      "Power Automate 抽取相关字段路由给 Agent",
+      "Agent 按确定性指令修正外部料号、订单号等",
+      "后续流程重处理，完整发票进入财务系统",
+      "按供应商与区域逐步扩展，规划分录与对账场景"
+    ],
+    "risks": "来源为微软客户案例，厂商渠道；场景是确定性规则修正，需最小权限、尽量只读和人工复核节点；MCP 能力仍在 QA。",
+    "featured": false,
+    "source_name": "Microsoft Customer Stories，2026-10-08",
+    "source_url": "https://www.microsoft.com/en/customers/story/27456-asurion-insurance-services-microsoft-copilot-studio",
+    "source_urls": [
+      "https://www.microsoft.com/en/customers/story/27456-asurion-insurance-services-microsoft-copilot-studio"
+    ]
+  },
+  {
+    "id": "cornerstone-bedrock-dataops",
+    "title": "Cornerstone：多 Agent 数据库故障诊断，从 45 分钟缩到 10 分钟",
+    "industry": "企业软件 / SaaS",
+    "role": "DataOps、SRE",
+    "stack": "Amazon Bedrock、Strands Agents 多 Agent 编排",
+    "summary": "Cornerstone OnDemand 的 DataOps 团队过去每次数据库事故要花最多 45 分钟手工查系统视图、对日志再跨团队交接。其 Orion AI 多 Agent 系统按领域分工协同，诊断时间降到 10 分钟（约 78%），手工生命周期步骤减少约 70%，冗余告警中位数降 65%。三人团队用六个月交付。",
+    "steps": [
+      "告警进入后路由到对应领域的专职 Agent",
+      "Agent 查询系统视图与日志、汇总诊断",
+      "混合路由：常见问题走固定路径，复杂问题交多 Agent 协同",
+      "会话级记忆加实时指标直取，避免用过期数据",
+      "结果同步给 SRE，过滤重复告警"
+    ],
+    "risks": "来源为 AWS 机器学习博客（与客户联合署名），厂商渠道；涉及生产数据库，需限定只读与操作审批；指标为企业自报。",
+    "featured": false,
+    "source_name": "AWS Machine Learning Blog，2026-10-07",
+    "source_url": "https://aws.amazon.com/blogs/machine-learning/how-cornerstone-ondemand-cut-database-diagnosis-by-78-with-amazon-bedrock/",
+    "source_urls": [
+      "https://aws.amazon.com/blogs/machine-learning/how-cornerstone-ondemand-cut-database-diagnosis-by-78-with-amazon-bedrock/"
+    ]
+  }
+]

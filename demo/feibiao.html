@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>废标速查 Demo · 智体用例</title>
+<meta name="description" content="面向中国企业的智能体真实落地目录"/>
+<link rel="stylesheet" href="../assets/style.css"/>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">智</span>
+      <span>智体用例</span>
+    </a>
+    <nav class="nav-links">
+      <a class="" href="../index.html">首页</a><a class="" href="../cases/index.html">用例目录</a><a class="active" href="../demo/feibiao.html">废标速查</a><a class="" href="../about.html">关于</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="wrap section" style="padding-top:2rem">
+  <div class="breadcrumbs"><a href="../index.html">首页</a> / 废标速查 Demo</div>
+  <h2>废标速查 Demo</h2>
+  <p class="desc">上传区为前端示意；请运行内置样例，查看「废标项 / 资格门槛 / 评分点 / 截止日」结构化输出（带来源章节引用）。</p>
+  <div class="danger-note">人工复核必做。本工具不保证防废标，不构成法律或投标意见。</div>
+
+  <div class="grid grid-2" style="margin-top:1.2rem">
+    <div class="card">
+      <h3>1. 上传招标文件（示意）</h3>
+      <div class="upload-box">
+        <p>拖拽 PDF / Word / 文本，或点击选择</p>
+        <input id="tender-file" type="file" accept=".pdf,.doc,.docx,.txt"/>
+        <p class="muted" id="upload-hint" style="margin-top:.6rem">MVP 不解析真实上传文件，仅示意交互。</p>
+      </div>
+      <p style="margin-top:1rem" class="muted">按次定价占位：¥9.9/次 · ¥99/月20次 · 企业版另议</p>
+    </div>
+    <div class="card">
+      <h3>2. 运行内置样例</h3>
+      <p class="muted">样例文本见 <code>demo/sample-tender.txt</code>，结构化结果见 JSON。</p>
+      <button class="btn btn-primary" id="run-sample" type="button">运行内置样例</button>
+      <p style="margin-top:.8rem"><a href="sample-tender.txt" target="_blank">查看样例原文</a></p>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:1rem">
+    <h3>结构化输出</h3>
+    <div id="demo-result" hidden></div>
+    <p class="muted" id="demo-placeholder">点击「运行内置样例」后在此展示。</p>
+  </div>
+</section>
+<script>
+document.getElementById('run-sample') && document.getElementById('run-sample').addEventListener('click', function(){
+  var p = document.getElementById('demo-placeholder'); if(p) p.hidden = true;
+});
+</script>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap row">
+    <div>
+      <strong style="color:var(--text)">智体用例</strong> · 面向中国企业的智能体真实落地目录<br>
+      用例均标注公开来源；指标为原文披露，跨案例不可直接对比。<br>
+      废标速查为示意 Demo，须人工复核，不保证防废标。
+    </div>
+    <div>
+      <a href="../about.html">免责声明</a> ·
+      <a href="../demo/feibiao.html">废标速查</a> ·
+      MVP · 2026
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/app.js"></script>
+</body>
+</html>

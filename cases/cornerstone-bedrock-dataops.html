@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Cornerstone：多 Agent 数据库故障诊断，从 45 分钟缩到 10 分钟 · 智体用例</title>
+<meta name="description" content="Cornerstone OnDemand 的 DataOps 团队过去每次数据库事故要花最多 45 分钟手工查系统视图、对日志再跨团队交接。其 Orion AI 多 Agent 系统按领域分工协同，诊断时间降到 10 分钟（约 78%），手工生命周期步骤减少约 70%，冗余告警中位数降 65%。三人"/>
+<link rel="stylesheet" href="../assets/style.css"/>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">智</span>
+      <span>智体用例</span>
+    </a>
+    <nav class="nav-links">
+      <a class="" href="../index.html">首页</a><a class="active" href="../cases/index.html">用例目录</a><a class="" href="../demo/feibiao.html">废标速查</a><a class="" href="../about.html">关于</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="wrap section" style="padding-top:2rem">
+  <div class="breadcrumbs"><a href="../index.html">首页</a> / <a href="index.html">用例目录</a> / Cornerstone：多 Agent …</div>
+  <h1 style="font-size:1.6rem;margin:0 0 .6rem">Cornerstone：多 Agent 数据库故障诊断，从 45 分钟缩到 10 分钟</h1>
+  <div class="meta">
+    <span class="tag">企业软件 / SaaS</span>
+    <span class="tag orange">DataOps、SRE</span>
+    
+  </div>
+  <div class="card" style="margin-top:1rem">
+    <dl class="kv">
+      <dt>行业</dt><dd>企业软件 / SaaS</dd>
+      <dt>角色</dt><dd>DataOps、SRE</dd>
+      <dt>工具栈</dt><dd>Amazon Bedrock、Strands Agents 多 Agent 编排</dd>
+    </dl>
+    <h3>摘要</h3>
+    <p>Cornerstone OnDemand 的 DataOps 团队过去每次数据库事故要花最多 45 分钟手工查系统视图、对日志再跨团队交接。其 Orion AI 多 Agent 系统按领域分工协同，诊断时间降到 10 分钟（约 78%），手工生命周期步骤减少约 70%，冗余告警中位数降 65%。三人团队用六个月交付。</p>
+    <h3>步骤摘要</h3>
+    <ol class="steps"><li>告警进入后路由到对应领域的专职 Agent</li><li>Agent 查询系统视图与日志、汇总诊断</li><li>混合路由：常见问题走固定路径，复杂问题交多 Agent 协同</li><li>会话级记忆加实时指标直取，避免用过期数据</li><li>结果同步给 SRE，过滤重复告警</li></ol>
+    <h3>风险与注意</h3>
+    <p class="note">来源为 AWS 机器学习博客（与客户联合署名），厂商渠道；涉及生产数据库，需限定只读与操作审批；指标为企业自报。</p>
+    <h3>来源</h3>
+    <p>AWS Machine Learning Blog，2026-10-07</p>
+    <p><a href="https://aws.amazon.com/blogs/machine-learning/how-cornerstone-ondemand-cut-database-diagnosis-by-78-with-amazon-bedrock/" target="_blank" rel="noopener">https://aws.amazon.com/blogs/machine-learning/how-cornerstone-ondemand-cut-database-diagnosis-by-78-with-amazon-bedrock/</a></p>
+  </div>
+  <p style="margin-top:1rem"><a class="btn" href="index.html">← 返回目录</a></p>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap row">
+    <div>
+      <strong style="color:var(--text)">智体用例</strong> · 面向中国企业的智能体真实落地目录<br>
+      用例均标注公开来源；指标为原文披露，跨案例不可直接对比。<br>
+      废标速查为示意 Demo，须人工复核，不保证防废标。
+    </div>
+    <div>
+      <a href="../about.html">免责声明</a> ·
+      <a href="../demo/feibiao.html">废标速查</a> ·
+      MVP · 2026
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/app.js"></script>
+</body>
+</html>
