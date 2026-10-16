@@ -1,8 +1,8 @@
 name: Enable GitHub Pages
 
-# One-shot: the cloud-agent token cannot manage Pages settings.
-# This job uses the repository GITHUB_TOKEN (pages: write) to set
-# source = Deploy from a branch, branch = main, folder = /.
+# The cloud-agent token cannot call POST /pages (needs Pages admin).
+# actions/deploy-pages uses the deployments API. After a site exists,
+# this job also tries to switch the source to legacy branch main /.
 on:
   push:
     branches: [main]
@@ -11,46 +11,46 @@ on:
   workflow_dispatch:
 
 permissions:
+  contents: read
   pages: write
+  id-token: write
 
 jobs:
-  enable:
+  deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Set Pages source to main /
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Switch source to branch main /
+        if: always()
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          set -euo pipefail
+          set +e
           payload='{"build_type":"legacy","source":{"branch":"main","path":"/"}}'
           code="$(curl -sS -o /tmp/pages.json -w '%{http_code}' \
-            -X POST \
+            -X PUT \
             -H "Authorization: Bearer ${GH_TOKEN}" \
             -H "Accept: application/vnd.github+json" \
             -H "X-GitHub-Api-Version: 2022-11-28" \
             -H "Content-Type: application/json" \
             -d "${payload}" \
             "https://api.github.com/repos/${{ github.repository }}/pages")"
-          echo "POST /pages -> ${code}"
+          echo "PUT /pages -> ${code}"
           cat /tmp/pages.json
           echo
-          if [ "${code}" != "201" ] && [ "${code}" != "200" ]; then
-            code="$(curl -sS -o /tmp/pages.json -w '%{http_code}' \
-              -X PUT \
-              -H "Authorization: Bearer ${GH_TOKEN}" \
-              -H "Accept: application/vnd.github+json" \
-              -H "X-GitHub-Api-Version: 2022-11-28" \
-              -H "Content-Type: application/json" \
-              -d "${payload}" \
-              "https://api.github.com/repos/${{ github.repository }}/pages")"
-            echo "PUT /pages -> ${code}"
-            cat /tmp/pages.json
-            echo
-          fi
-          case "${code}" in
-            200|201) ;;
-            *) exit 1 ;;
-          esac
           curl -sS -o /tmp/repo.json -w 'PATCH repo -> %{http_code}\n' \
             -X PATCH \
             -H "Authorization: Bearer ${GH_TOKEN}" \
@@ -58,14 +58,7 @@ jobs:
             -H "X-GitHub-Api-Version: 2022-11-28" \
             -H "Content-Type: application/json" \
             -d '{"homepage":"https://khuang1019-hub.github.io/zhiti-yongli/","description":"企业智能体真实用例目录"}' \
-            "https://api.github.com/repos/${{ github.repository }}" || true
-          cat /tmp/repo.json || true
+            "https://api.github.com/repos/${{ github.repository }}"
+          cat /tmp/repo.json
           echo
-          curl -sS -o /tmp/build.json -w 'POST /pages/builds -> %{http_code}\n' \
-            -X POST \
-            -H "Authorization: Bearer ${GH_TOKEN}" \
-            -H "Accept: application/vnd.github+json" \
-            -H "X-GitHub-Api-Version: 2022-11-28" \
-            "https://api.github.com/repos/${{ github.repository }}/pages/builds" || true
-          cat /tmp/build.json || true
-          echo
+          echo "page_url=${{ steps.deployment.outputs.page_url }}"
